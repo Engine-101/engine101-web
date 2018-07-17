@@ -1,0 +1,16 @@
+<div class="nav-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class=" nav-inner full-width d-flex justify-content-between align-items-center">
+          <div class="logo-container">
+            <h4>Engine 101</h4>
+          </div>
+          <ul class="nav-items">
+            <li class="nav-item featured-font" *ngFor="let item of navItems" [routerLink]="item.url" routerLinkActive="active">{{item.title}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
