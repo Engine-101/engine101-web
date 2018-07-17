@@ -1,5 +1,8 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/view';
+
 .nav-container {
-  background: #fff;
+  background: transparent;
   min-height: 80px;
   position: fixed;
   top: 0;
@@ -21,6 +24,7 @@
     list-style: none;
 
     .nav-item {
+      color: $white;
       display: inline-block;
       padding: 20px 10px;
       cursor: pointer;
@@ -29,5 +33,20 @@
         color: #2A93D5;
       }
     }
+  }
+}
+
+.nav-fixed {
+  background: $white;
+  display: none;
+
+  .visible {
+    transition: top 0.5s ease-in-out;
+    display: inline-block !important;
+    top: 0;
+  }
+
+  .nav-item {
+    color: #333333;
   }
 }
